@@ -9,19 +9,19 @@
   <link rel='stylesheet' type='text/css' href='./css/main.css'/>
 </head>
 <body>
-  <main>
-    <video autoplay loop preload ='auto'>
+  <main class='row'>    
+    <video class='col-sm-12 col-md-12' autoplay loop preload ='auto'>
       <source src='./assets/vid/video.webm' 
         type='video/webm;codecs="vp8, vorbis"'/>
       <source src='./assets/vid/video.mp4' 
         type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
       <!-- Needs gif -->
     </video>
-    <header>
-      <h1>Chris Jeffries</h1>
-      <p class='lead'>Multimedia Artist</p>
-    </header>
-    <section>
+    <section class='row'>
+      <header>
+        <iframe height="180" scrolling="yes" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/22790379&amp;auto_play=false&amp;hide_related=false&amp;visual=false&amp;show_artwork=false"></iframe>
+      </header>
+      <img class='col-offset-4 col-sm-4 col-offset-4' src='assets/img/homoless.png'/>
       <!-- TODO: Newsletter Signup for Updates on New Music -->
       <aside>
         <!-- Videos Stuff Here -->
@@ -33,11 +33,10 @@
           <li><a href="#">Bandcamp</a></li>
         </ul>
       </nav>
-    </section>    
-    <footer>
-      <p>&copy; Copyright Chris Jeffries 2014. All rights reserved.</p>
-    </footer>
+    </section>
   </main>
+
+  <script src='./js/libs/jquery.js'></script>
   <script src='./js/libs/bootstrap.js'></script>
   <script src='./js/main.js'></script>
 </body>
